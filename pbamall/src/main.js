@@ -5,13 +5,18 @@ import App from './App'
 import router from './router'
 import Axios from 'axios'
 import '../static/css/font-awesome.css'
+import '../static/css/base.css'
+
 //请求拦截
 Axios.interceptors.response.use(function (response) {
     return response.data;
  }, function (error) {
     return Promise.reject(error);
   });
-Vue.prototype.$axios=Axios 
+  
+  //把axios挂载到实例
+Vue.prototype.$axios=Axios
+
 Vue.config.productionTip = false
 new Vue({
   el: '#app',
