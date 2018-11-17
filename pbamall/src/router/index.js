@@ -4,6 +4,7 @@ import Home from '../components/pages/Home/Home'
 import Classification from '../components/pages/Classification/Classification'
 import ShoppingCart from '../components/pages/ShoppingCart/ShoppingCart'
 import Use from '../components/pages/Use/Use'
+import ClassifiList from '../components/pages/Classification/sonClassification/ClassifiList'
 
 Vue.use(Router)
 
@@ -12,20 +13,29 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
+//    name: 'Home',
+     redirect: '/Home',
       component: Home
     },
     //首页路由
     {
     	path: '/Home',
       name: 'Home',
+       
       component: Home
     },
     //分类路由
     {
     	path: '/Classification',
       name: 'Classification',
-      component: Classification
+      component: Classification,
+      
+    },
+    //列表页路由
+    {
+    	 	path:'/ClassifiList',
+      	name:'ClassifiList',
+      	component:ClassifiList
     },
     //购物车路由
     {

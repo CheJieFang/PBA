@@ -28,7 +28,12 @@
 			Vue.nextTick(()=>{
        			this.mySwiper = new Swiper('.swiper-container', {
 					loop: true,
-					autoplay:true,
+					autoplay:{
+						//时间间隔
+						delay: 2000,
+						 //true触碰后自动切换停止，false触碰后自动切换也不会停止
+						disableOnInteraction: false,
+					},				
 					pagination: {
 				      el: '.swiper-pagination',
 				  },

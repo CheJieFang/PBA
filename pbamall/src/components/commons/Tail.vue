@@ -1,25 +1,9 @@
 <template>
 	<div class="tail">
-		<router-link v-for="(item,index) in Tlist" :key=index :to="item.router"  :active-class="active">
-			<!--{{index}}-->
+		<router-link v-for="(item,index) in Tlist" :key=index :to="item.router"  active-class="active">
 			<i :class="item.icon"></i>
 			<p>{{item.title}}</p>
 		</router-link>
-		<!--<router-link to="/Classification">
-			
-			<i class="fa fa-th-large" aria-hidden="true"></i>
-			<p>分类</p>
-		</router-link>
-		<router-link to="/ShoppingCart">
-			
-			<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-			<p>购物车</p>
-		</router-link>
-		<router-link to="/Use">
-			
-			<i class="fa fa-user" aria-hidden="true"></i>
-			<p>我的</p>
-		</router-link>-->
 	</div>
 </template>
 
