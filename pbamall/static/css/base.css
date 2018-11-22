@@ -18,7 +18,7 @@ a {text-decoration:none; }
 body {
 	min-width: 375px;
 	min-height: 650px;
-    background:#f2f2f2;
+    /*background:#f2f2f2;*/
 }
 /*清除浮动（不管）*/
 .clearfix:before,.clearfix:after {  /*清楚浮动*/

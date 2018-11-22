@@ -6,6 +6,7 @@ import router from './router'
 import Axios from 'axios'
 import '../static/css/font-awesome.css'
 import '../static/css/base.css'
+import './styles/main.less'
 
 //请求拦截
 Axios.interceptors.response.use(function (response) {

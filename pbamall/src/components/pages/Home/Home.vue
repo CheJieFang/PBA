@@ -44,21 +44,24 @@ export default{
 			display: flex;
 			border-bottom: 1px solid #DDDDDD;
 			li{
+				/*width: 100%;*/
 				flex: 1;
 				border-right: 1px solid #DDDDDD;
 				img{
-					.w(124);
+					/*.w(124);*/
+					width: 100%;
 					.h(139);
 				}
 			}
 		}
 		.banner-hot{
-			.w(375);
+			width: 100%;
 			.h(62);
 			border-bottom: 2px solid #D1D1D1;
 			img{
-				.w(375);
-				.h(62);
+				/*.w(375);*/
+				width:100%;
+				.h(59);
 			}
 		}
 		

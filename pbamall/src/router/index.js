@@ -5,6 +5,9 @@ import Classification from '../components/pages/Classification/Classification'
 import ShoppingCart from '../components/pages/ShoppingCart/ShoppingCart'
 import Use from '../components/pages/Use/Use'
 import ClassifiList from '../components/pages/Classification/sonClassification/ClassifiList'
+import Login from '../components/pages/Use/Login'
+import Reg from '../components/pages/Use/Reg'
+import MyInformation from '../components/pages/Use/MyInformation'
 
 Vue.use(Router)
 
@@ -47,7 +50,12 @@ export default new Router({
     {
     	path: '/Use',
       name: 'Use',
-      component: Use
+      component: Use,
+       children:[
+       		{path:'Login',name:'Login',component:Login},
+        	{path:'Reg',name:'Login',component:Reg},
+          {path:'MyInformation',name:'Login',component:MyInformation},
+       ]
     }
   ]
 })

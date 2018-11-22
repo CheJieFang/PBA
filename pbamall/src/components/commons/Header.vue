@@ -25,32 +25,30 @@
 <style lang="less" scoped="scoped">
 @import url("../../styles/main.less");
 .header{
+	width:100%;
 	.h(60);
-	.padding(10,10,10,10);
+	/*.padding(10,10,10,10);*/
+	padding:3%;
 	border-bottom: 1px solid #E2E2E2;
+	background:#f2f2f2;
 	.h_search{
 		.h(36);
-		.padding(0,15,0,15);
 		border-radius: 3px;
 		background:#fff;
 		input{
 			vertical-align: top;
-			.h(36);
-			.w(293);
+			padding:8px 6px;
+			width:85%;
+			font-size: 16px;
 		}
 		a{
 			display: inline-block;
-			.h(36);
-			.w(32);
-			position:relative;
+			font-size: 12px;
+			padding: 5px;
+
 			img{
-				.w(20);
-				.h(20);
-				margin-top:4px;
-				margin-right:5px;
-				position: absolute;
-				top:5px;
-				right: 0;
+				width: 100%;
+
 			}
 		}
 		

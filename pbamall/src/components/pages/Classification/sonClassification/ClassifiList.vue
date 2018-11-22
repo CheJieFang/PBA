@@ -31,7 +31,7 @@
 </template>
 
 <script>
-	let rootpath = 'http://localhost:8081'
+//	let rootpath = 'http://localhost:8081'
 	//引入Header组件
 	import Header from '../../../commons/Header'
 	//引入Tail组件
@@ -49,7 +49,7 @@
 		methods:{
 			//通过axios拿到数据
 			getData(){
-				this.$axios.post(rootpath + '/api/goodsList/getData')
+				this.$axios.post('/rootpath/api/goodsList/getData')
 				.then((res)=>{
 					console.log(res.data)
 					this.classifiList = res.data

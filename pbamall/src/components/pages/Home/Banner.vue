@@ -50,7 +50,7 @@
 	.swiper-slide{
 		.h(145);
 		img{
-		.w(375);
+		 width:100%;
 		.h(145);
 		}
 	}

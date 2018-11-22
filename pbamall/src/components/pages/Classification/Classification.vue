@@ -99,24 +99,23 @@
 			background:#fff;
 			.classifyAll{
 				h1{
-					.h(65);
-					.padding(10,10,0,10);
+					padding:3%;
 					img{
+						width:100%;
 						.h(50);
 					}
 				}
 				.zhe{
-					.h(400);
-					
+					/*.h(400);*/
 					.padding(20,0,20,0);
 					a{
 						display:inline-block;
-						margin-left:10px;
+						margin-left:3%;
 						margin-bottom:15px;
 						box-shadow: 0px 3px 8px 1px #e2e2e2;
-						.w(172);
+						width:45.5%;
 						img{
-							.w(172);
+							width:100%;
 						}
 					}
 				}
@@ -124,9 +123,9 @@
 			}
 			.classifyCategory{
 				h1{
-					.h(65);
-					.padding(10,10,0,10);
+					padding:3%;
 					img{
+						width:100%;
 						.h(50);
 					}
 				}
@@ -137,12 +136,12 @@
 						.fs(14);
 						text-align:center;
 						display:inline-block;
-						.w(100);
+						width: 28%;
 						border: 1px solid #E5E5E5;
 						border-radius: 27px;
 						.padding(10,0,10,0);
 						color: #535353;
-						margin-left:18px;
+						margin-left:4%;
 						
 						
 						
@@ -151,9 +150,9 @@
 			}
 			.classifyEfficacy{
 				h1{
-					.h(65);
-					.padding(10,10,0,10);
+					padding:3%;
 					img{
+						width:100%;
 						.h(50);
 					}
 				}
@@ -164,12 +163,12 @@
 						.fs(14);
 						text-align:center;
 						display:inline-block;
-						.w(100);
+						width: 28%;
 						border: 1px solid #E5E5E5;
 						border-radius: 27px;
 						.padding(10,0,10,0);
 						color: #535353;
-						margin-left:18px;
+						margin-left:4%;
 						
 					}
 					

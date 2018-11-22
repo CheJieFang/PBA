@@ -34,7 +34,7 @@
 <style lang="less" scoped="scoped">
 	@import url("../../styles/main.less");
 	.tail{
-		.w(375);
+		/*.w(375);*/
 		.h(50);
 		background:#fff;
 		position:fixed;

@@ -1,5 +1,6 @@
 <template>
 	<div class="Use">
+		<router-view></router-view>
 		<Tail></Tail>
 	</div>
 </template>
@@ -16,6 +17,20 @@
 				name:'我是Use',
 				
 			}
+		},
+		methods:{
+			getLocalStorage(){
+				var Zh = window.localStorage.getItem('regZh');
+				if(Zh == null){
+					this.$router.push('/Use/Login');
+				}else{
+					this.$router.push('/Use/MyInformation');
+				}
+			}
+		},
+		created(){
+//			this.$router.push('/Use/Reg');
+			this.getLocalStorage();
 		}
 	}
 </script>

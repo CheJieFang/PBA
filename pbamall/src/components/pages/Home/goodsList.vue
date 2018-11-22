@@ -19,7 +19,7 @@
 </template>
 
 <script>
-	let rootpath='http://localhost:8081'
+//	let rootpath='http://localhost:8081'
 	import Vue from 'vue'
 	export default{
 		name:'goodsList',
@@ -31,7 +31,7 @@
 		},
 		methods:{
 			getData(){
-				this.$axios.post(rootpath+'/api/goodsList/getData')
+				this.$axios.post('/rootpath/api/goodsList/getData')
 				.then((res)=>{
 					console.log(res.data);
 					this.goodsList=res.data
@@ -52,16 +52,17 @@
 .gList{
 .goodList{
 			background:#fff;
-			.w(375);
+
 			height: auto;
 			margin-bottom:52px;
 			li{
 				position: relative;
-				.w(375);
+				/*.w(375);*/
 				.h(140);
 				border-bottom: 1px solid #D0D0D0;
 				.goodLeft{
 					float: left;
+					overflow:hidden;
 					.w(106);
 					.h(109);
 					img{
@@ -73,7 +74,7 @@
 					
 					.fs(14);
 					float: left;
-					.w(230);
+					
 					.h(70);
 					.padding(20,0,0,10);
 					

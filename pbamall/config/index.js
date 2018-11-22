@@ -17,6 +17,12 @@ module.exports = {
             pathRewrite:{'^/api':'/'}
 
         },
+        '/rootpath':{
+            target:'http://localhost:8081',//目标地址
+            changeOrigin:true,
+            pathRewrite:{'^/rootpath':'/'}
+
+        },
     },
 
     // Various Dev Server settings
